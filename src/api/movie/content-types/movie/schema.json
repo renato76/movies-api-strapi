@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "Movie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "starring": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "ageRating": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "trailer": {
+      "type": "string"
+    },
+    "genres": {
+      "type": "customField",
+      "options": [
+        "Action",
+        "Adventure",
+        "Thriller",
+        "Comedy",
+        "Science Fiction",
+        "War",
+        "Crime",
+        "Drama",
+        "Family",
+        "Fantasy"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "imageUrl": {
+      "type": "string"
+    }
+  }
+}
