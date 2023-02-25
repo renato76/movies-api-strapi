@@ -51,6 +51,12 @@
     },
     "imageUrl": {
       "type": "string"
+    },
+    "backdropUrl": {
+      "type": "string"
+    },
+    "overlayColor": {
+      "type": "string"
     }
   }
 }
