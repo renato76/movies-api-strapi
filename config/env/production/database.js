@@ -1,5 +1,5 @@
 const parse = require("pg-connection-string").parse
-const config = parse(process.env.HEROKU_POSTGRESQL_ONYX_URL)
+const config = parse(process.env.DATABASE_URL)
 
 module.exports = ({ env }) => ({
   connection: {
