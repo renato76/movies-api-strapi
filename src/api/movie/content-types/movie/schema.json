@@ -55,8 +55,17 @@
     "backdropUrl": {
       "type": "string"
     },
-    "overlayColor": {
-      "type": "string"
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "movie"
+    },
+    "likedBy": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "likedMovies"
     }
   }
 }
